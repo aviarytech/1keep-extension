@@ -1,9 +1,9 @@
-# UniSat Wallet
+# 1keep
 
-UniSat Wallet - the first open-source browser extension wallet for Ordinals on bitcoin.
+1keep - the first open-source browser extension wallet for Verifiable Credentials, Decentralized Identifiers and Ordinals on bitcoin.
 
-- Website: https://unisat.io/
-- Twitter: https://twitter.com/unisat_wallet
+- Website: https://1keep.com/
+- Twitter: https://twitter.com/1keep
 
 ## How to build
 
@@ -16,4 +16,4 @@ UniSat Wallet - the first open-source browser extension wallet for Ordinals on b
 
 ## Special Thanks
 
-Thanks to the MetaMask team for their contributions to the browser extension wallet community, UniSat Wallet relies heavily on their contributions.
+Thanks to the Unisat team for their contributions to the browser extension wallet community, 1keep relies heavily on their contributions.

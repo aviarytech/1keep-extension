@@ -165,7 +165,7 @@ export const ADDRESS_TYPES: {
 export const RESTORE_WALLETS: { value: RestoreWalletType; name: string; addressTypes: AddressType[] }[] = [
   {
     value: RestoreWalletType.UNISAT,
-    name: 'UniSat Wallet',
+    name: '1keep',
     addressTypes: [
       AddressType.P2WPKH,
       AddressType.P2SH_P2WPKH,
@@ -222,7 +222,7 @@ export const WALLETCONNECT_STATUS_MAP = {
 export const INTERNAL_REQUEST_ORIGIN = 'https://unisat.io';
 
 export const INTERNAL_REQUEST_SESSION = {
-  name: 'UniSat Wallet',
+  name: '1keep',
   origin: INTERNAL_REQUEST_ORIGIN,
   icon: './images/logo/logo@128x.png'
 };
@@ -264,10 +264,9 @@ export const TO_LOCALE_STRING_CONFIG = {
 export const SATS_DOMAIN = '.sats';
 export const UNISAT_DOMAIN = '.unisat';
 
-export const GITHUB_URL = 'https://github.com/unisat-wallet/extension';
-export const DISCORD_URL = 'https://discord.com/invite/EMskB2sMz8';
-export const TWITTER_URL = 'https://twitter.com/unisat_wallet';
-
 export const CHANNEL = process.env.channel!;
 export const VERSION = process.env.release!;
 export const MANIFEST_VERSION = process.env.manifest!;
+export const GITHUB_URL = 'https://github.com/aviarytech/1keep';
+export const DISCORD_URL = 'https://discord.gg/NbQhngPaMT';
+export const TWITTER_URL = 'https://twitter.com/aviarytech';
