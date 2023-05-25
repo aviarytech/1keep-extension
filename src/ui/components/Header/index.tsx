@@ -41,7 +41,7 @@ export function Header(props: HeaderProps) {
         }}>
         <Row full>
           <Column selfItemsCenter>
-            {LeftComponent}
+            {/* {LeftComponent} */}
             {onBack && (
               <Row
                 onClick={(e) => {

@@ -1,14 +1,14 @@
 {
-  "name": "unisat-extension",
-  "version": "1.1.20",
+  "name": "1keep-extension",
+  "version": "1.1.19",
   "private": true,
-  "homepage": "https://github.com/unisat-wallet/extension#readme",
+  "homepage": "https://github.com/aviarytech/1keep-extension#readme",
   "bugs": {
-    "url": "https://github.com/unisat-wallet/extension/issues"
+    "url": "https://github.com/aviarytech/1keep-extension/issues"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/unisat-wallet/extension.git"
+    "url": "https://github.com/aviarytech/1keep-extension.git"
   },
   "scripts": {
     "clean": "mkdir -p dist && rm -rf dist/* && cp -r build/_raw/* dist",
