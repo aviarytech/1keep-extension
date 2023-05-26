@@ -100,7 +100,7 @@ export default function InscriptionPreview({ data, onClick, preset }: Inscriptio
   console.log('data', data);
 
   return (
-    <Column gap="zero" onClick={onClick} style={$containerPresets[preset]}>
+    <Column gap="zero" onClick={onClick} style={Object.assign({ position: 'relative' }, $containerPresets[preset])}>
       {data.contentType === 'application/json' || data.contentType.indexOf('text/plain') >= 0 ? (
         <Iframe
           preview={data.preview.replace('https://ordinals.com', 'https://inscri.pt')} // https://ordinalsreserve.com
