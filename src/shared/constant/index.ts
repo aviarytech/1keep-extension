@@ -264,9 +264,6 @@ export const TO_LOCALE_STRING_CONFIG = {
 export const SATS_DOMAIN = '.sats';
 export const UNISAT_DOMAIN = '.unisat';
 
-export const CHANNEL = process.env.channel!;
-export const VERSION = process.env.release!;
-export const MANIFEST_VERSION = process.env.manifest!;
 export const GITHUB_URL = 'https://github.com/aviarytech/1keep';
 export const DISCORD_URL = 'https://discord.gg/NbQhngPaMT';
 export const TWITTER_URL = 'https://twitter.com/aviarytech';
