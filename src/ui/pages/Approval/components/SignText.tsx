@@ -1,4 +1,5 @@
 import { Button, Card, Column, Content, Footer, Header, Layout, Row, Text } from '@/ui/components';
+import Iframe from '@/ui/components/Iframe';
 import WebsiteBar from '@/ui/components/WebsiteBar';
 import { useApproval } from '@/ui/utils';
 
@@ -39,7 +40,13 @@ export default function SignText({ params: { data, session } }: Props) {
             mt="lg"
           />
           <Text text="You are signing:" textCenter mt="lg" />
-
+          <Iframe
+            style={{
+              width: 348,
+              height: 348
+            }}
+            preview={`https://inscri.pt/preview/${data.text}`}
+          />
           <Card>
             <div
               style={{

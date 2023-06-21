@@ -12,9 +12,7 @@ const Iframe = ({ preview, style, ref }: IframeProps) => {
         src={preview}
         sandbox="allow-scripts"
         scrolling="no"
-        loading="lazy">
-        test
-      </iframe>
+        loading="lazy"></iframe>
     ),
     [preview]
   );

@@ -97,7 +97,6 @@ export default function InscriptionPreview({ data, onClick, preset }: Inscriptio
   const time = getDateShowdate(date);
   const isUnconfirmed = date.getTime() < 100;
   const numberStr = isUnconfirmed ? 'unconfirmed' : `# ${data.inscriptionNumber}`;
-  console.log('data', data);
 
   return (
     <Column gap="zero" onClick={onClick} style={Object.assign({ position: 'relative' }, $containerPresets[preset])}>

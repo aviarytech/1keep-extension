@@ -10,7 +10,7 @@ import ReadyPromise from './readyPromise';
 import { $, domReadyCall } from './utils';
 
 const log = (event, ...args) => {
-  if (process.env.NODE_ENV !== 'production') {
+  if (process.env.NODE_ENV !== 'production' && args[0].indexOf('keepAlive') < 0) {
     console.log(
       `%c [1keep] (${new Date().toTimeString().slice(0, 8)}) ${event}`,
       'font-weight: 600; background-color: #7d6ef9; color: white;',
@@ -34,7 +34,7 @@ interface StateProvider {
   isPermanentlyDisconnected: boolean;
 }
 const EXTENSION_CONTEXT_INVALIDATED_CHROMIUM_ERROR = 'Extension context invalidated.';
-export class UnisatProvider extends EventEmitter {
+export class OneKeepProvider extends EventEmitter {
   _selectedAddress: string | null = null;
   _network: string | null = null;
   _isConnected = false;
@@ -312,23 +312,23 @@ export class UnisatProvider extends EventEmitter {
 
 declare global {
   interface Window {
-    unisat: UnisatProvider;
+    keep: OneKeepProvider;
   }
 }
 
-const provider = new UnisatProvider();
+const provider = new OneKeepProvider();
 
-if (!window.unisat) {
-  window.unisat = new Proxy(provider, {
+if (!window.keep) {
+  window.keep = new Proxy(provider, {
     deleteProperty: () => true
   });
 }
 
-Object.defineProperty(window, 'unisat', {
+Object.defineProperty(window, 'keep', {
   value: new Proxy(provider, {
     deleteProperty: () => true
   }),
   writable: false
 });
 
-window.dispatchEvent(new Event('unisat#initialized'));
+window.dispatchEvent(new Event('keep#initialized'));
